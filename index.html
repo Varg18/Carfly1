@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carfly</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="flex mt-14">
+      <ul class="flex  ml-[454px]">
+        <li class="text-slate-500 mr-[55px] text-2xl">Услуги</li>
+        <li class="text-slate-500 mr-[58px] text-2xl">О парковке</li>
+        <li class="text-slate-500 mr-[52px] text-2xl">Где мы?</li>
+        <li class="text-slate-500 mr-[202px] text-2xl">Камеры</li>
+      </ul>
+      <div class="flex">
+        <img class="mr-[7px]" src="./assets/Whats_App.svg" alt="WhatsApp">
+        <span class="mr-[23px] text-2xl"><strong>+7 (921) 000-00-00</strong></span>
+        <span class="text-2xl"><strong>8 (800) 555-35-35</strong></span>
+      </div>
+    </div>
+    <div class="mt-[55px]">
+      <div class="grid ">
+        <div style="grid-column: 1/6;grid-row: 1/6;">
+          <img class="max-h-[364px] min-w-[1920px]" src="./assets/Airport.png" alt="">
+        </div>
+        <div style="grid-column: 1/3; grid-row: 1/3;" class="w-[693px] ml-[240px]">
+          <p class="text-[62px] leading-[74px] mt-[73px]">
+            <strong>Парковка в Пулково<br> c трансфером <br> в аэропорт</strong>
+          </p>
+        </div>
+        <div class="h-[436px] w-[815px] ml-[270px]" style="grid-column: 2/6; grid-row: 2/3;">
+          <img class="" src="./assets/Group_people_car.svg" alt="">
+        </div>
+        <div class="flex mt-[424px] ml-[240px]" style="grid-column: 1/3;grid-row:1/3;">
+          <div class="my-auto">
+            <span class="text-[#579D45] text-2xl">1 - 2 дня</span>
+            <br>
+            <span class="text-2xl"><strong>350 рублей</strong></span>
+          </div>
+          <div class="mr-[15px] ml-[15px] h-[123px] border-l-2"></div>
+          <div class="my-auto">
+            <span class="text-[#579D45] text-2xl">3 - 7 дней</span>
+            <br>
+            <span class="text-2xl"><strong>250 рублей</strong></span>
+          </div>
+          <div class="mr-[15px] ml-[15px] border-l-2"></div>
+          <div class="my-auto">
+            <span class="text-[#579D45] text-2xl">7 - 14 дней</span>
+            <br>
+            <span class="text-2xl"><strong>200 рублей</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex mt-[67px] ml-[240px]">
+        <span class="text-base">Дата и время въезда (вылет - 3 часа)</span>
+        <span class="ml-[250px] text-base">Дата и время выезда (прилет + 1 час)</span>
+      </div>
+      <div class="flex ml-[240px]">
+        <div class="border-2 w-[480px] h-[60px] mr-10">
+          <div class="flex">
+            <img class="ml-[30px] mt-[19px] mb-[19px]" src="./assets/Calendar.svg" alt="">
+            <span class="uppercase ml-4 mt-[19px] mb-[19px] text-[#788195] ">дд / мм / гг</span>
+            <div class="border h-[44px] mt-2 mb-2 ml-20"></div>
+            <img class="ml-[30px]" src="./assets/Clock.svg" alt="">
+            <span class="ml-4 mt-[19px] mb-[19px] text-[#788195] ">00:00</span>
+          </div>
+        </div>
+        <div class="border-2 w-[480px] h-[60px] mr-10">
+          <div class="flex">
+            <img class="ml-[30px] mt-[19px] mb-[19px]" src="./assets/Calendar.svg" alt="">
+            <span class="uppercase ml-4 mt-[19px] mb-[19px] text-[#788195] ">дд / мм / гг</span>
+            <div class="border h-[44px] mt-2 mb-2 ml-20"></div>
+            <img class="ml-[30px]" src="./assets/Clock.svg" alt="">
+            <span class="ml-4 mt-[19px] mb-[19px] text-[#788195] ">00:00</span>
+          </div>
+        </div>
+        <button class="bg-[#579D45] w-[359px] h-[60px] uppercase text-white">найти место</button>
+      </div>
+    </div>
+    <div class="mt-[100px] max-h-3xl">
+      <div class="flex ">
+        <span class="text-[62px] leading-[74px] mx-auto font-extrabold">Услуги</span>
+      </div>
+      <!-- меню услуг -->
+      <ul class="flex mt-[50px] justify-center">
+        <li class="mr-10 text-[32px] leading-9 "><button id="freePage-btn"
+            class="focus:underline focus:underline-offset-8 focus:text-lime-600">Беслатный
+            трансфер</button></li>
+        <li class="mr-10 text-[32px] leading-9 "><button id="comfortPage-btn"
+            class="no-underline focus:underline focus:text-lime-600 focus:underline-offset-8">Комфортное
+            оформление</button>
+        </li>
+        <li class="mr-10 text-[32px] leading-9"><button id="additionallPage-btn"
+            class="no-underline focus:underline focus:text-lime-600 focus:underline-offset-8">Дополнительно</button>
+        </li>
+      </ul>
+      <div id="freePage" class="flex">
+        <div class="grid">
+          <div class="mt-[72px]" style="grid-column: 1/4 ;grid-row: 1/4;">
+            <img class="min-h-[196px] min-w-[650px]" src="./assets/Arrow.svg" alt="">
+          </div>
+          <div class="mb-[85px] mr-6" style="grid-column: 3/5;grid-row: 3;">
+            <img class="min-h-[306px] min-w-[764px]" src="./assets/Carfly.svg" alt="">
+          </div>
+        </div>
+        <ul class="ml-[103px] mt-[103px] list-outside list-disc marker:text-lime-600">
+          <li class="text-2xl">Следите онлайн за
+            местонахождением <br> автобуса!</li>
+          <li class="text-2xl mt-5">Вежливый водитель, 5 минут в
+            пути, запись <br> происходящегов
+            салоне для решения <br>
+            конфликтных ситуаций
+          </li>
+          <li class="text-2xl mt-5">При необходимости
+            устанавливается детское <br> кресло в автомобиль
+            трансфера
+          </li>
+          <img class="h-[100px] w-[554px] mt-[54px]" src="./assets/Arrow.svg" alt="">
+        </ul>
+      </div>
+
+      <div id="comfortPage">
+        <div class="flex">
+          <div class="grid">
+            <div class=" mt-[72px]" style="grid-column: 1/4 ;grid-row: 1/4 ;">
+              <img class=" min-h-[196px] min-w-[650px]" src="./assets/Arrow.svg" alt="">
+            </div>
+            <div class="mt-[40px] mr-[110px]" style="grid-column: 3/5;grid-row: 3;">
+              <img class="min-h-[380px] min-w-[857px]" src="./assets/Comfort.svg" alt="">
+            </div>
+          </div>
+          <ul class="ml-[103px] mt-[103px] list-outside list-disc marker:text-lime-600">
+            <li class="text-2xl">Забронируйте и оплатите место заранее и сэкономьте время на оформление на месте!
+            </li>
+            <li class="text-2xl mt-5">Комфортный офис с туалетом, питьевой водой и Wi-Fi
+            </li>
+            <li class="text-2xl mt-5">Заключаем договор ответственного хранения
+            </li>
+            <img class="h-[100px] w-[554px] mt-[54px]" src="./assets/Arrow.svg" alt="">
+          </ul>
+        </div>
+      </div>
+
+      <div id="additionallPage">
+        <div class="flex">
+          <div class="grid">
+            <div class=" mt-[72px]" style="grid-column: 1/4 ;grid-row: 1/4 ;">
+              <img class=" min-h-[196px] min-w-[650px]" src="./assets/Arrow.svg" alt="">
+            </div>
+            <div class="mt-[40px] ml-[110px]" style="grid-column: 3/5;grid-row: 3;">
+              <img class="min-h-[380px] min-w-[857px]" src="./assets/Additionallsvg.svg" alt="">
+            </div>
+          </div>
+          <ul class="ml-[103px] mt-[103px] list-outside list-disc marker:text-lime-600">
+            <li class="text-2xl">Упаковка богажа. Один чемодан - бесплатно!
+              Каждый последующий чемодан -
+              200 рублей
+            </li>
+            <li class="text-2xl mt-5">Спустило колесо? Не беда -
+              поможем накачать!
+            </li>
+            <li class="text-2xl mt-5">Сел аккумулятор? Не беда -
+              поможем
+              с запуском
+              автомобиля
+            </li>
+            <img class="h-[100px] w-[554px] mt-[54px]" src="./assets/Arrow.svg" alt="">
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="mt-[100px] mx-auto">
+      <span class="text-[62px] leading-[74px] flex justify-center font-extrabold">О парковке</span>
+      <div class="ml-[240px] grid grid-cols-3 gap-10 max-w-[1400px] mt-[52px]">
+        <div>
+          <img src="./assets/about_parking/500_cars.svg" alt="">
+        </div>
+        <div>
+          <img src="./assets/about_parking/Good_people.svg" alt="">
+        </div>
+        <div>
+          <img src="./assets/about_parking/Responsibility.svg" alt="">
+        </div>
+        <div>
+          <img src="./assets/about_parking/Safety.svg" alt="">
+        </div>
+        <div>
+          <img src="./assets/about_parking/Camera_protect.svg" alt="">
+        </div>
+        <div class="relative">
+          <img src="./assets/about_parking/Reserve_now.svg" alt="">
+          <button style="transform: translate(-50%, -50%);"
+            class="absolute top-[65%] left-[46%] uppercase text-[#579D45] bg-white h-[60px] w-[305px] text-[20px] leading-5"><strong>забронировать</strong></button>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="grid grid-cols-4 gap-10 ml-[240px] mt-[60px]">
+          <div class="min-h-[515px] min-w-[680px]" style="grid-column:span 2 ; grid-row:span 2;">
+            <img class="min-h-[515px] min-w-[680px]" src="./assets/about_parking/Online.svg" alt="">
+          </div>
+          <div>
+            <img src="./assets/about_parking/Blue_car.svg" alt="">
+          </div>
+          <div>
+            <img src="./assets/about_parking/Cars.svg" alt="">
+          </div>
+          <div>
+            <img src="./assets/about_parking/Cars2.svg" alt="">
+          </div>
+          <div>
+            <img src="./assets/about_parking/Cars3.svg" alt="">
+          </div>
+          <div>
+            <img src="./assets/about_parking/Cars4.svg" alt="">
+          </div>
+          <div>
+            <img src="./assets/about_parking/Cars5.svg" alt="">
+          </div>
+          <div>
+            <img src="./assets/about_parking/Cars6.svg" alt="">
+          </div>
+          <div>
+            <img src="./assets/about_parking/Cars7.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="mt-[60px] h-[60px] w-[207px] mx-auto">
+        <div class="border-2 border-lime-600 flex justify-center">
+          <span class="mr-[10px] mt-[18px] mb-[18px] text-[20px] leading-5 text-lime-600 font-bold"><a href="#">Ещё
+              фото</a></span>
+          <img class="max-h-[8px] max-w-[12px] my-auto" src="./assets/about_parking/More_photos.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="ml-[240px] mt-[199px] flex">
+      <div>
+        <span class="text-[62px] leading-[74px] font-extrabold">Где мы<br>находимся</span>
+        <div class="mt-8">
+          <span class="text-[32px] leading-9 font-extrabold">Адрес</span>
+        </div>
+        <div class="mt-3">
+          <p class="text-2xl font-semibold text-[#4D5465]">Пулковское ш., д. 41, лит. ЗИ, Санкт-Петербург</p>
+        </div>
+        <div class="mt-10">
+          <span class="text-[32px] leading-9 font-extrabold">Координаты</span>
+        </div>
+        <div>
+          <p class="text-2xl font-semibold text-[#4D5465]">55.58804713; 37.21705019</p>
+        </div>
+        <div class="mt-10">
+          <div class="flex">
+            <img src="./assets/about_parking/WhatsApp.svg" alt="">
+            <p class="ml-[17px] text-2xl text-[#4D5465] font-semibold underline underline-offset-1">+7 (921) 000-00-00
+            </p>
+          </div>
+          <div class="flex mt-[13px]">
+            <img src="./assets/about_parking/Phone.svg" alt="">
+            <p class="ml-[17px] text-2xl text-[#4D5465] font-semibold underline underline-offset-1">8 (800) 555-35-35
+            </p>
+          </div>
+          <div class="mt-[49px] h-[60px] w-[336px]">
+            <div class="border-2 border-lime-600 flex justify-center">
+              <span class="mr-[10px] mt-[18px] mb-[18px] text-[20px] leading-5 text-lime-600 font-bold"><a
+                  href="#">Найти в Навигаторе</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="ml-[19px] max-h-[605px] max-w-[840px]" src="./assets/about_parking/Map.svg" alt="">
+    </div>
+    <div class="mt-[116px] grid">
+      <div style="grid-column:1/6;grid-row:1/6;">
+        <img src="./assets/Footer.svg" alt="">
+      </div>
+      <div class="flex mr-[270px]" style="grid-column:4/6;grid-row:2;">
+        <div class="flex">
+          <img src="./assets/Footer_Whats_App.svg" alt="">
+          <p class="ml-[17px] text-2xl text-white font-semibold">+7 (921) 000-00-00
+          </p>
+        </div>
+        <div class="flex ml-[42px]">
+          <p class="ml-[17px] text-2xl text-white font-semibold">Тел. 8 (800) 555-35-35
+          </p>
+        </div>
+      </div>
+      <div class="min-w-[1400px] max-w-[1400px] ml-56 h-[2px]" style="grid-column: 1/6 ;grid-row: 4/5 ;">
+        <div class="border-b-2 "></div>
+      </div>
+      <div class="mt-[23px] ml-[220px]" style="grid-column:1/2;grid-row: 4/5 ;">
+        <p class="text-white text-[16px] leading-5 font-semibold">© Carfly 2020</p>
+      </div>
+      <div class="mt-[23px] mr-[275px]" style="grid-column:5/6 ;grid-row:4/5 ;">
+        <p class="text-white text-[16px] leading-5  font-semibold underline underline-offset-1"><a href="#">Политика
+            конфидициальности</a></p>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
